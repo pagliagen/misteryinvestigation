@@ -1,0 +1,148 @@
+.dicerollermessages-listner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.dicerollermessages-pushdicerollmessage {
+  position: relative;
+}
+.dicerollermessages-pushdicerollmessage_popup {
+  position: relative;
+  margin-bottom: 2px;
+  cursor: pointer;
+  opacity: 0.7;
+  background-attachment: fixed;
+  background-image: url("../assets/images/wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_failed  > div {
+  color: white;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_failed::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.dicerollermessages-pushdicerollmessage_popup.rolldice_extrafailed  > div {
+  color: white;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_extrafailed::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.dicerollermessages-pushdicerollmessage_popup.rolldice_failed
+  .dicerollermessages-pushdicerollmessage_popup_rolldice,
+.dicerollermessages-pushdicerollmessage_popup.rolldice_normal
+  .dicerollermessages-pushdicerollmessage_popup_rolldice {
+  visibility: hidden;
+}
+
+.dicerollermessages-pushdicerollmessage_popup.rolldice_normal > div {
+  color: black;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_normal::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.dicerollermessages-pushdicerollmessage_popup.rolldice_arduous  > div {
+  color: black;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_arduous::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.dicerollermessages-pushdicerollmessage_popup.rolldice_extreme > div {
+  color: black;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_extreme::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.dicerollermessages-pushdicerollmessage_popup.rolldice_critic::before {
+  color: black;
+}
+.dicerollermessages-pushdicerollmessage_popup.rolldice_critic::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.dicerollermessages-pushdicerollmessage_popup {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.dicerollermessages-pushdicerollmessage_popup_message {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.dicerollermessages-pushdicerollmessage_popup_rolldice {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+}
+
+@media screen and (min-width: 1024px) {
+  .dicerollermessages-listner {
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    z-index: unset;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid #cf9b47;
+    width: 40%;
+    min-width: 400px;
+    overflow-y: auto;
+  }
+}

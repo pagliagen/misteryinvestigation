@@ -1,0 +1,24 @@
+.audio-player {
+  position: relative;
+  width: 100%;
+}
+
+.audio-player-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #cf9b47;
+  padding: 5px;
+}
+
+.audio-player-content div {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.audio-player-content button + button {
+  margin-left: 10px;
+}

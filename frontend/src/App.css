@@ -1,0 +1,87 @@
+/* CSS Reset */
+div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #7e7e7e;
+}
+
+div#root {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-block: unset;
+}
+
+a,
+button {
+  padding: 5px 10px;
+  background-color: rgb(128, 128, 128);
+  border: none;
+  margin: 10px 0;
+  line-height: 14px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid #7e7e7e;
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+button:hover {
+  background-color: white;
+  color: #7e7e7e;
+}
+a + a {
+  margin-left: 10px;
+}
+
+form {
+  padding: 10px;
+}
+
+label {
+  width: 250px;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 14px;
+  font-size: 12px;
+}
+input, textarea, select {
+  width: 250px;
+  font-size: 12px;
+  background-color: #7e7e7e;
+  color: white;
+  border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+}
+input::placeholder {
+  color: antiquewhite;
+  font-size: 11px;
+}
+textarea {
+  min-height: 200px;
+  resize: vertical;
+  background-color: #7e7e7e;
+  color: white;
+} 
+
+
+
+

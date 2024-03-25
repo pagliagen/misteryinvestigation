@@ -1,0 +1,7 @@
+node_modules/
+character_images/*
+audios/*
+frontend/public/audios/*
+tmp/*
+backups/*
+.env

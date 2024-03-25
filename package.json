@@ -1,0 +1,27 @@
+{
+    "name": "mistery-investigation",
+    "version": "1.0.0",
+    "description": "A website built with Node.js",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "canvas": "^2.11.2",
+        "cli-table": "^0.3.11",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.18.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.2.2",
+        "multer": "^1.4.5-lts.1",
+        "mysql": "^2.18.1",
+        "node-cron": "^3.0.3",
+        "nodemailer": "^6.9.12",
+        "slugify": "^1.6.6",
+        "socket.io": "4.7.5",
+        "websocket": "^1.0.34",
+        "ws": "^8.16.0"
+    }
+}

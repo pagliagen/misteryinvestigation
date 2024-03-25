@@ -1,0 +1,12 @@
+.characters-conteiner-audioplayer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .characters-conteiner {
+    max-width: unset;
+  }
+}

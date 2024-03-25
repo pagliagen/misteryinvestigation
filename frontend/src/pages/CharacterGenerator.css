@@ -1,0 +1,245 @@
+.createcharacter-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.createcharacter-page-form {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.createcharacter-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.character-create-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.character-create-steps {
+  position: relative;
+}
+.character-create-steps ul {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.character-create-steps ul li {
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+  font-size: 15px;
+  width: 10%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.character-create-steps li.active {
+  color: white;
+  font-weight: bold;
+}
+
+.character-create-content .hidden_form {
+  display: none;
+}
+.character-create-content .active_form {
+  position: relative;
+  display: block;
+}
+
+.characteristics-rolldice {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.characteristics-rolldice-temp div {
+  display: flex;
+  justify-content: space-between;
+}
+.characteristics-rolldice-temp div span {
+  display: block;
+  font-size: 13px;
+}
+.characteristics-rolldice-temp div span:first-child {
+  font-weight: bold;
+}
+.characteristics-rolldice-temp div span + span{
+  margin-left: 10px;
+}
+
+.characteristics-blocks {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.characteristics-block {
+  width: 33%;
+  padding: 10px;
+}
+.characteristics-age {
+  padding: 10px;
+}
+.characteristics-block input {
+  width: 100%;
+}
+
+.characteristics-points {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.active_form button {
+  position: relative;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.active_form button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.character-step-workandskills > div + div {
+  margin-top: 25px;
+}
+
+.character-step-work-content {
+  position: relative;
+  column-count: 3;
+}
+.character-step-skills-content {
+  position: relative;
+  column-count: 4;break-inside: avoid;
+}
+.character-step-skills-content > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+.character-step-skills-content > div label {
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+}
+.character-step-skills-content > div input {
+    width: 100%;
+}
+.character-step-skills-content > div input.invalid {
+  background-color: red;
+  border-color: red;
+}
+.character-step-skills-content > div .skill_notice {
+  line-height: 10px;
+  font-size: 10px;
+  height: 10px;
+  margin-top: 5px;
+  text-align: right;
+  color: red;
+}
+.character-step-skills-content > div input:not(.invalid) + .skill_notice {
+  visibility: hidden;
+}
+
+.editavatar-buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.editavatar-buttons button + button {
+  margin-left: 10px;
+}
+
+.history-textarea, .finance-textarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+.history-textarea label, .finance-textarea label {
+  width: 250px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.history-textarea textarea, .finance-textarea textarea {
+  flex-grow: 1;
+  flex-shrink: 1;
+  resize: vertical;
+  width: 100%;
+}
+
+.finance-weapon {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.finance-weapon-block {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 150px;
+  max-width: 12.5%;
+  background-color: #7e7e7e;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+} 
+
+.finance-weapon-block label {
+  color: black;
+    padding: 2px;
+    line-height: 10px;
+    font-size: 10px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 12px;
+}
+
+.finance-weapon-block input {
+  background-color: unset;
+  border: unset;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 2px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.finance-weapon-block input:focus-visible {
+  outline: none;
+  border-bottom-color: #4caf50;
+}
+
+.finance-weapon-block button {
+  margin: unset;
+  padding: unset;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

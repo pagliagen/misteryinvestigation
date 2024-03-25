@@ -1,0 +1,151 @@
+.character-list-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.character-list {
+  position: relative;
+  width: 100%;
+}
+
+.slick-slide {
+  opacity: 0.5;
+}
+.slick-slide.slick-active.slick-current {
+  opacity: 1;
+}
+.character-card_avatar {
+  position: relative;
+  padding: 10px;
+  scale: 0.95;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+.slick-slide.slick-active.slick-current .character-card_avatar {
+  scale: 1;
+}
+
+.character-card_avatar img {
+  position: relative;
+  width: 100%;
+  max-width: 180px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 1px solid #cf9b47;
+  margin-bottom: 4px;
+}
+
+.character-list-carousel {
+  position: relative;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: calc(100% - 180px);
+  max-height: 400px;
+}
+
+.character-list-infocharacter {
+  color: #7e7e7e;
+    padding: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    min-height: 100%;
+}
+
+.character-list-infocharacter_pages {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: calc(100% - 180px);
+  max-height: 400px;
+}
+
+.character-list-infocharacter_pages a {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  text-align: center;
+  background-color: unset;
+  border: unset;
+}
+
+.character-list-infocharacter_pages a img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.character-list-infocharacter_info {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 170px;
+}
+.character-list-infocharacter_info_details {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.character-list-infocharacter_info_buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-list-carousel_bagliore {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../assets/images/bagliore.png);
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  opacity: 0.5;
+  margin-bottom: -20px;
+}
+
+.character-list-carousel:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  pointer-events: none;
+  content: "";
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 70%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+@media screen and (min-width: 361px) {
+  .character-list-infocharacter_pages {
+    height: unset;
+    max-height: unset;
+  }
+}

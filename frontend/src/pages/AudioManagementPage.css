@@ -1,0 +1,233 @@
+.file-explorer {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.file-explorer-grouplist,
+.file-explorer-detail {
+  position: relative;
+  height: 100%;
+}
+
+.file-explorer-grouplist {
+  min-width: 30%;
+  max-width: 50%;
+}
+
+.file-explorer-detail {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.file-group-header_title {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.file-explorer-grouplist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;  
+  padding-right: 10px;
+}
+
+.file-group:not(.open) .file-group-header_icon {
+  visibility: hidden;
+} 
+
+.file-explorer-grouplist .file-group {
+  position: relative;
+  width: 100%;
+  border: 1px solid #cf9b47;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 5px 15px;
+}
+.file-explorer-grouplist .file-group + .file-group {
+  margin-top: 5px;
+}
+
+.file-group.open {
+  border-right: unset;
+  background-attachment: fixed;
+  background-image: url(../assets/images/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.file-group.open:after {
+  position: absolute;
+  top: -1px;
+  content: "";
+  bottom: -1px;
+  right: -10px;
+  border-top: 1px solid #cf9b47;
+  border-bottom: 1px solid #cf9b47;
+  width: 10px;
+  z-index: 1;
+  background-attachment: fixed;
+  background-image: url(../assets/images/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.file-explorer-detail {
+  position: relative;
+  border: 1px solid #cf9b47;
+  background-attachment: fixed;
+  background-image: url(../assets/images/wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.file-group-header_icon {
+  position: relative;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.file-group-header_icon img {
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.file-group.open .file-group-header_title {
+  color: white;
+}
+
+.file-explorer-detail-content {
+    flex-wrap: wrap;
+    display: flex;
+    overflow: auto;
+    height: fit-content;
+    max-height: 100%;
+}
+
+.file-group-content_file {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  width: calc(50% - 10px);
+  border: 1px solid #cf9b47;
+  margin: 5px;
+  padding: 5px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.file-group-content_file:hover,
+.file-group-content_file.audio_playing {
+  color: white;
+  border-color: white;
+}
+.file-group-content_file.audio_playing:after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -13px;
+  margin-right: 5px;
+  height: 20px;
+  content: "\266C\266A\266D\266A";
+}
+
+.file-explorer-mobile-grouplist_content {
+    position: relative;
+    column-count: 2;
+}
+
+.file-explorer-mobile-grouplist > .file-group-content_file {
+    width: 100%;
+}
+
+.file-explorer-mobile-grouplist_content .file-group-content_file {
+    width: 100%;
+    break-inside: avoid;
+}
+
+.file-explorer-mobile-grouplist_content .file-group-content_file:before {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 0px;
+    right: 0px;
+    border: 1px solid #cf9b47;
+    content: '';
+}
+
+.file-explorer-mobile-grouplist_header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.file-explorer-wrapper.offline:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  cursor: wait;
+}
+
+.file-explorer-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.file-explorer-wrapper.offline {
+  filter: blur(1px);
+}
+
+.file-group-header_icon > div {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .file-explorer.desktop {
+        display: none;
+    }
+    .file-explorer.mobile {
+        display: block;
+    }
+    .file-explorer-grouplist {
+        max-width: unset;
+    }
+    .file-explorer-detail {
+        width: unset;
+    }
+    .file-explorer-grouplist .file-group {
+        width: calc(100% - 10px)
+    }
+    .file-group-content_file {
+        margin: unset;
+        border: unset;
+    }
+    .file-group-content_file.audio_playing:after {
+        top: -8px
+    }
+}
+@media screen and (min-width: 769px) {
+    .file-explorer.desktop {
+        display: flex;
+    }
+    .file-explorer.mobile {
+        display: none;
+    }
+}
+

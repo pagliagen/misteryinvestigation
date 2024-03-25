@@ -1,0 +1,26 @@
+.characterdetail-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  color: #7e7e7e;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-detail {
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .character-detail-content {
+    position: relative;
+    display: flex;
+    height: 100%;
+  } 
+}

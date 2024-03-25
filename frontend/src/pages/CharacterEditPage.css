@@ -1,0 +1,191 @@
+.createcharacter-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.createcharacter-page-form {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.createcharacter-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.character-create-form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.character-create-form img {
+  width: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.character-create-form button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.character-create-form span {
+  display: inline-block;
+  width: 200px;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+}
+
+.character-skillsection_list {
+  height: 45px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.character-skillsection_list input + input {
+  margin-left: 10px;
+}
+.character-skillsection_list input.character-skillsection_name {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.character-skillsection_list input.character-skillsection_value {
+  max-width: 40px;
+  text-align: center;
+}
+
+span.character-skillsection_labelpoints {
+  white-space: nowrap;
+  width: 100%;
+  text-align: right;
+}
+span.character-skillsection_points {
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  width: unset;
+  font-size: unset;
+  line-height: unset;
+  padding-left: unset;
+}
+
+.character-create-form__weapons_weapon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.character-create-form__weapons_weapon > input {
+  width: 12%;
+}
+.character-create-form__weapons_weapon > input + input {
+  margin-left: 5px;
+}
+.character-create-form__weapons_weapon_nameblock {
+  position: relative;
+  width: 100%;
+}
+
+.character-create-form__weapons_weapon_infoblock {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+input.character-create-form__weapons_weapon_name {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+}
+input.character-create-form__weapons_weapon_damage {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.character-create-form__weapons_weapon_infoblock > input {
+  width: 1px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.character-create-form__weapons_weapon_infoblock input + input {
+  margin-left: 5px;
+}
+.character-create-form__weapons_weapon_damage {
+  min-width: 75px;
+  max-width: 100px;
+}
+.character-create-form__weapons_weapon_actions {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.character-create-form__sections_background_info {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.character-create-form__sections_background_info label {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.character-create-form__sections_background_info textarea {
+  flex-grow: 1;
+  flex-shrink: 1;
+  resize: vertical;
+}
+
+.character-create-form__sections_field {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+}
+.character-create-form__sections_field input,
+.character-create-form__sections_field span {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.character-create-form__sections_background_info label {
+  width: 100px;
+}
+
+section.character-create-form__sections h2 {
+  font-size: 20px;
+  cursor: pointer
+}
+section.character-create-form__sections h2:hover {
+  color: white;
+}
+
+.character-create-form__sections_buttons {
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+section.character-create-form__sections.section_selected h2 {
+  color: white;
+}
